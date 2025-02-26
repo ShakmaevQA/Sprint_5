@@ -9,19 +9,19 @@ class Locators:
     # Кнопка "Зарегистрироваться"
     register_button = (By.XPATH, './/button[text() = "Зарегистрироваться"]')
     # Поле "Имя" для экрана регистрации
-    field_name_reg = By.XPATH, './/fieldset[1]/div/div/input[@name = "name"]'
+    field_name_reg = By.XPATH, './/label[contains(text(), "Имя")]/following-sibling::input'
     # Поле "Email" для экрана регистрации
-    field_email_reg = By.XPATH, './/fieldset[2]/div/div/input[@name = "name"]'
+    field_email_reg = By.XPATH, './/label[contains(text(), "Email")]/following-sibling::input'
     # Поле "Пароль" для экрана регистрации
-    field_password_reg = By.XPATH, './/fieldset[3]/div/div/input[@name = "Пароль"]'
+    field_password_reg = By.XPATH, './/label[contains(text(), "Пароль")]/following-sibling::input'
     # Кнопка "Сохранить"
     save_button = By.XPATH, './/button[2][text() = "Сохранить"]'
     # Кнопка "Оформить заказ"
     order_button = By.XPATH, './/button[text()="Оформить заказ"]'
     # Поле "Email" на экране авторизации
-    field_email_login = By.XPATH, './/fieldset[1]/div/div/input[@name = "name"]'
+    field_email_login = By.XPATH, './/input[@name = "name"]'
     # Поле "Пароль" на экране авторизации
-    field_password_login = By.XPATH, './/fieldset[2]/div/div/input[@name = "Пароль"]'
+    field_password_login = By.XPATH, './/input[@name = "Пароль"]'
     # Кнопка "Войти" на экране авторизации
     login_button = By.XPATH, './/button[text() = "Войти"]'
     # Текст валидации при вводе некорректного пароля

@@ -6,7 +6,7 @@ from selenium import webdriver
 @pytest.fixture
 def driver():
     chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--window-size=1920,1080')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://stellarburgers.nomoreparties.site/")
@@ -17,7 +17,7 @@ def driver():
 @pytest.fixture
 def driver_register():
     chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--window-size=1920,1080')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://stellarburgers.nomoreparties.site/register")
@@ -27,7 +27,7 @@ def driver_register():
 @pytest.fixture
 def driver_login():
     chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--window-size=1920,1080')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://stellarburgers.nomoreparties.site/login")
@@ -38,7 +38,7 @@ def driver_login():
 @pytest.fixture
 def driver_forgot_password():
     chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_argument('--window-size=1920,1080')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get("https://stellarburgers.nomoreparties.site/forgot-password")

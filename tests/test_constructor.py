@@ -42,6 +42,8 @@ class TestConstructor:
         driver_login.find_element(*Locators.sauces_section).click()
         WebDriverWait(driver_login, 6).until(expected_conditions.visibility_of_element_located(Locators.order_button))
 
+        assert driver_login.find_element(*Locators.sauces_section).is_displayed()
+
     def test_go_to_fillings_section(self, driver_login, email, password):
 
         driver_login.find_element(*Locators.field_email_login).send_keys(email)
@@ -51,6 +53,9 @@ class TestConstructor:
 
         driver_login.find_element(*Locators.filling_section).click()
         WebDriverWait(driver_login, 6).until(expected_conditions.visibility_of_element_located(Locators.order_button))
+
+        assert driver_login.find_element(*Locators.filling_section).is_displayed()
+
 
     def test_go_to_buns_section(self, driver_login, email, password):
 
@@ -64,6 +69,9 @@ class TestConstructor:
 
         driver_login.find_element(*Locators.buns_section).click()
         WebDriverWait(driver_login, 6).until(expected_conditions.visibility_of_element_located(Locators.order_button))
+
+        assert driver_login.find_element(*Locators.buns_section).is_displayed()
+
 
 
 
