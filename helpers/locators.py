@@ -41,9 +41,11 @@ class Locators:
     # Раздел "Булки"
     buns_section = By.XPATH, './/span[text() = "Булки"]'
     # Раздел "Соусы"
-    sauces_section = By.XPATH, '//span[text() = "Соусы"]'
+    sauces_section = By.XPATH, './/span[text() = "Соусы"]'
     # Раздел "Начинки"
-    filling_section = By.XPATH, '//span[text() = "Начинки"]'
+    filling_section = By.XPATH, './/span[text() = "Начинки"]'
+    # Выбранный раздел
+    selected_section = By.XPATH, './/div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]'
 
 
 
